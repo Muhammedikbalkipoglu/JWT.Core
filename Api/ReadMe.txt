@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext "Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=api.token.db;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Domain

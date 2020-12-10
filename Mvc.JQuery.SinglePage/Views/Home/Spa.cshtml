@@ -1,0 +1,137 @@
+﻿
+@{
+    ViewData["Title"] = "Spa";
+}
+
+@section Scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnSave").click(function () {
+
+                let name = $("#Name").val();
+                let surname = $("#SurName").val();
+                let Email = $("#Email").val();
+                let Password = $("#Password").val();
+
+                let user = { "Name": name, "SurName": surname, "Email": Email, "Password": Password };
+
+                var url = "https://localhost:44313/api/user";
+
+                $.ajax({
+                    type: "POST",
+                    crossDomain: true,
+                    url: url,
+                    data: JSON.stringify(user),
+                    success: function (data) {
+                        console.table(data);
+                    },
+                    error: function (error) { console.error(error); },
+                    contentType: "application/json",
+                    dataType: "json"
+                })
+            })
+
+            function getUserData() {
+
+                let url = "https://localhost:44313/api/user";
+                let accesstoken = localStorage.getItem("token");
+
+                $.ajax({
+                    type: "GET",
+                    url: url,
+                    async: false,
+                    crossDomain: true,
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader("Authorization", "Bearer" + accesstoken)
+                    },
+                    statusCode: {
+
+                        401: function () { }
+
+                    },
+                    success: function (data) {
+                        console.log(data);
+                        $("loginDiv").hide();
+                        $("userDiv").show().html("").append('<table class="table"><tr><th>Id</th><th>FirstName</th><th>LastName</th><th>Email</th></tr><tr><td>${data.id}</td><td>${data.name}</td><td>${data.surname}</td><td>${data.email}</td></tr></table>');
+
+                    },
+                    error: function (error) { },
+                    contentType: "application/json",
+                    dataType: "json"
+                })
+
+            }
+
+            $("#btnLogin").click(function () {
+
+                let Email = $("#LoginEmail").val();
+
+                let Password = $("#LoginPassword").val();
+
+                let user = { "Email": Email, "Password": Password };
+
+                let url = "https://localhost:44313/api/login/accesstoken";
+
+                $.ajax({
+                    type: "POST",
+                    crossDomain: true,
+                    url: url,
+                    data: JSON.stringify(user),
+                    success: function (data) {
+
+                        console.table(data);
+                        localStorage.setItem("token", data.token);
+                        localStorage.setItem("refreshToken", data.refreshToken)
+                        getUserData();
+                    },
+                    error: function (error) { console.log(error) },
+                    contentType: "application/json",
+                    dataType: "json"
+                })
+            })
+
+
+        })
+    </script>
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Üye Kayıt Formu</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="Name" placeholder="isminiz" value="Fatih" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="SurName" placeholder="Soy isminiz" value="Çakıroğlu" />
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="Email" placeholder="Mail adresiniz" value="ikbalkerem@gmail.com" />
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="Password" placeholder="Şifreniz" value="1234" />
+                </div>
+                <button type="button" id="btnSave" class="btn btn-primary">Kaydet</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div id="userDiv">
+
+            </div>
+            <div id="loginDiv">
+                <h2>Üye Giriş Formu</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="LoginEmail" placeholder="emailadresiniz" value="muhammmedikbal@gmail.com" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="LoginPassword" placeholder="şifreniz" value="1954" />
+                    </div>
+                    <button type="button" id="btnLogin" class="btn btn-success">Giriş</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
