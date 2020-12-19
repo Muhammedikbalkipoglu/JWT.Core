@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\muhammedikbal\\Desktop\\Uyagder\\WebApi\\Api.Core.JWT\\Api\\Api.csproj": {}
+    "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\muhammedikbal\\Desktop\\Uyagder\\WebApi\\Api.Core.JWT\\Api\\Api.csproj": {
+    "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\muhammedikbal\\Desktop\\Uyagder\\WebApi\\Api.Core.JWT\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\muhammedikbal\\Desktop\\Uyagder\\WebApi\\Api.Core.JWT\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\muhammedikbal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\muhammedikbal\\Desktop\\Uyagder\\WebApi\\Api.Core.JWT\\Api\\obj\\",
+        "projectPath": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\Ekrem Arslan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\muhammedikbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ekrem Arslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
