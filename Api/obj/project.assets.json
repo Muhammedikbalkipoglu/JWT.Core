@@ -6020,19 +6020,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muhammedikbal\\.nuget\\packages\\": {}
+    "C:\\Users\\Ekrem Arslan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muhammedikbal\\Source\\Repos\\JWT.Core\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\muhammedikbal\\Source\\Repos\\JWT.Core\\Api\\Api.csproj",
-      "packagesPath": "C:\\Users\\muhammedikbal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muhammedikbal\\Source\\Repos\\JWT.Core\\Api\\obj\\",
+      "projectPath": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Api\\Api.csproj",
+      "packagesPath": "C:\\Users\\Ekrem Arslan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\muhammedikbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ekrem Arslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6115,7 +6115,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

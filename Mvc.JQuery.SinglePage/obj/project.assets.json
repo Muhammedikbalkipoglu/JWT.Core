@@ -6069,19 +6069,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\muhammedikbal\\.nuget\\packages\\": {}
+    "C:\\Users\\Ekrem Arslan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\muhammedikbal\\Source\\Repos\\JWT.Core\\Mvc.JQuery.SinglePage\\Mvc.JQuery.SinglePage.csproj",
+      "projectUniqueName": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Mvc.JQuery.SinglePage\\Mvc.JQuery.SinglePage.csproj",
       "projectName": "Mvc.JQuery.SinglePage",
-      "projectPath": "C:\\Users\\muhammedikbal\\Source\\Repos\\JWT.Core\\Mvc.JQuery.SinglePage\\Mvc.JQuery.SinglePage.csproj",
-      "packagesPath": "C:\\Users\\muhammedikbal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\muhammedikbal\\Source\\Repos\\JWT.Core\\Mvc.JQuery.SinglePage\\obj\\",
+      "projectPath": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Mvc.JQuery.SinglePage\\Mvc.JQuery.SinglePage.csproj",
+      "packagesPath": "C:\\Users\\Ekrem Arslan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ekrem Arslan\\Documents\\GitHub\\JWT.Core\\Mvc.JQuery.SinglePage\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\muhammedikbal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ekrem Arslan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6130,7 +6130,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.205\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
